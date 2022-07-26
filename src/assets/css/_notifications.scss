@@ -1,0 +1,19 @@
+.notifications{
+    .notification.unread{
+        border-left-color: $red;
+    }
+    .notification{
+        padding: 15px;
+        color: $darkGrey;
+        border-left: 3px solid transparent;
+        @media (min-width: $md) {
+            padding: 22px;
+        }
+        &:hover{
+            background-color: $orange;
+            color: $white;
+            border-left-color: $darkGrey;
+        }
+    }
+   
+}

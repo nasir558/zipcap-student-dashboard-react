@@ -1,0 +1,17 @@
+.attendance {
+    .filterFormTop {
+        max-width: 100%;
+        margin-top: 0 !important;
+        @media (min-width: $md) {
+
+            max-width: max-content !important;
+        }
+    }
+    .attendanceWelcomeScreen{
+        min-height: 600px;
+        p{
+            color: $darkGrey;
+            font-size: 18px;
+        }
+    }
+}

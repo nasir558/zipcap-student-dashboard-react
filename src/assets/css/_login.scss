@@ -1,0 +1,333 @@
+.loginMainCon {
+    background-image: url(../images/login-background.jpg);
+    background-size: cover;
+
+    .backgroundOverlay {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.modal-description {
+    padding: 49px 24px;
+    height: 100%;
+
+    h3 {
+        font-size: 30px;
+        line-height: initial;
+        margin-top: 19px;
+        text-align: left;
+
+        @media (min-width: $lg) {
+            font-size: 44px;
+        }
+    }
+
+    p {
+        color: #919191;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;
+
+        small {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+.signup {
+    padding: 49px 24px;
+    text-align: center;
+
+    .signupBox {
+        margin-top: 20px;
+        margin-bottom: 32px;
+
+        @media (min-width: $lg) {
+            margin-top: 80px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #636363;
+
+            &:first-child {
+                margin-bottom: 32px;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 32px;
+            }
+
+            a,
+            .formLink {
+                color: $red;
+                text-decoration: none;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .seperator {
+        font-size: 16px;
+        color: #636363;
+    }
+
+    .signUpBtns {
+        margin-top: 32px;
+        padding-bottom: 32px;
+
+        button {
+            border: thin solid $black;
+            font-size: 16px;
+            border-radius: 12px;
+            text-align: center;
+            padding: 15px;
+            outline: none;
+
+            &:hover {
+                border-color: $red;
+                color: $red;
+            }
+
+            &:first-child {
+                margin-bottom: 20px;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+
+            @media (max-width: 414px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .termsCond {
+        font-size: 14px;
+        color: #7E7E7E;
+
+        a {
+            color: #7E7E7E;
+            text-decoration: underline;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
+
+.otp {
+
+    form {
+        @media (min-width: $lg) {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+    }
+}
+
+.forgotPassword {
+    form {
+        @media (min-width: $lg) {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+    }
+}
+
+.closeBtn {
+    top: 32px;
+    right: 40px;
+    outline: none;
+
+    img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.emailSignUpForm {
+    margin-top: 20px;
+}
+
+.form-login {
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+
+        input,
+        select {
+            border: thin solid #B7B7B7;
+            border-radius: 12px;
+            height: 50px !important;
+            padding: 17px 40px 17px 40px;
+            outline: none;
+            background-position: 14px center;
+            background-repeat: no-repeat;
+            color: $black;
+
+            &:focus {
+                border-color: $red;
+            }
+
+            &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #ACACAC;
+                opacity: 1;
+                /* Firefox */
+            }
+
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #ACACAC;
+            }
+
+            &::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #ACACAC;
+            }
+        }
+
+        select {
+            padding-top: 0;
+            padding-bottom: 0;
+            /* for Firefox */
+            -moz-appearance: none;
+            /* for Chrome */
+            -webkit-appearance: none;
+
+            &::-ms-expand {
+                display: none;
+            }
+        }
+
+        select.grey{
+            color: #ACACAC;
+        }
+        .others {
+            color: #000;
+        }
+
+        .react-datepicker-wrapper {
+            width: 100%;
+        }
+
+        .showPass {
+            right: 15px;
+            top: 20px;
+            z-index: 99;
+        }
+
+        .name {
+            background-image: url(../images/Name.png);
+        }
+
+        .email {
+            background-image: url(../images/email.png);
+        }
+
+        .passowrd {
+            background-image: url(../images/lock.png);
+        }
+
+        .gender {
+            background-image: url(../images/gender.png), url(../images/down-arrow.png);
+            background-position: 14px center, calc(100% - 18px) center;
+            background-size: auto, 14px;
+            background-repeat: no-repeat;
+        }
+
+        .dob {
+            background-image: url(../images/calendar.png);
+        }
+
+        .city {
+            background-image: url(../images/location.png);
+        }
+
+        button:not(.react-datepicker__navigation) {
+            max-width: 276px;
+            width: 100%;
+            margin-top: 32px;
+        }
+    }
+
+    .terms,
+    .terms label {
+        color: #7E7E7E;
+        font-size: 12px;
+
+        i {
+            top: -1px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .f-pass {
+        .formLink {
+            color: #7E7E7E;
+            font-size: 16px;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    a {
+        color: $black;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+}
+
+.loginText {
+    color: #919191;
+    font-size: 16px;
+    margin-top: 32px;
+
+    span {
+        color: $black;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.loginLInk {
+    color: $black;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.formLink {
+    max-width: none !important;
+    width: auto !important;
+    margin-top: 0 !important;
+}
+
+.borderBottom {
+    border-bottom: thin solid $black;
+}
+
+.passShowHideBtn {
+    width: auto !important;
+    margin: 0 !important;
+}
+
+.locationPicker .pac-target-input {
+    background-image: url(../images/location.png);
+}

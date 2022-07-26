@@ -1,0 +1,244 @@
+.profile {
+    form {
+        color: $darkGrey;
+        .react-datepicker-wrapper{
+            width: 100%;
+        }
+        input:not([type=checkbox]):not([type=radio]),
+        textarea,
+        select {
+            font-size: 14px;
+            color: $darkGrey;
+            line-height: 22px;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            outline: none;
+            margin-bottom: 10px;
+
+            &:focus,
+            &:not([disabled]) {
+                background: $white;
+                outline: none;
+            }
+        }
+        select {
+            -moz-appearance: none;
+            /* Firefox */
+            -webkit-appearance: none;
+            /* Safari and Chrome */
+            appearance: none;
+        }
+
+        textarea {
+            overflow: hidden;
+            resize: none;
+
+            &:focus {
+                overflow-y: visible;
+            }
+        }
+
+        .formTtitle h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: $darkGrey;
+            border-bottom: thin solid $courseNavigationColor;
+            padding-bottom: 12px;
+        }
+    }
+}
+
+.paymentMethodForm {
+    color: $darkGrey;
+    border-radius: 10px;
+
+    form {
+
+        .editBtn,
+        .deleteBtn {
+            padding: 10px 17px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $red;
+                color: $white;
+            }
+        }
+
+        .editBtn {
+            background-color: #409367;
+            color: $white;
+            -moz-appearance: none;
+            /* Firefox */
+            -webkit-appearance: none;
+            /* Safari and Chrome */
+            appearance: none;
+        }
+
+        .deleteBtn {
+            padding: 7px 17px;
+            border: thin solid $red;
+            color: $red;
+        }
+    }
+}
+
+label.customRadio {
+    position: relative;
+    padding-left: 36px;
+
+    @media (max-width: 415px) {
+        padding-left: 30px;
+    }
+
+    input {
+        display: none;
+
+        &:checked+i {
+            background-image: url(../images/radio-selected.png);
+        }
+    }
+
+    i {
+        width: 28px;
+        height: 28px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 100px;
+        background-size: 100% 100%;
+        background-position: center center;
+        background-image: url(../images/radio-unselected.png);
+        box-sizing: border-box;
+
+        &:before,
+        &:after {
+            box-sizing: border-box;
+        }
+
+        @media (max-width: $md) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.settings {
+    .settingsTabs {
+        ul.react-tabs__tab-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border: none;
+
+            li.react-tabs__tab {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                color: $darkGrey;
+                padding: 10px 27px;
+                border-radius: 29px;
+                border: none;
+                box-shadow: none;
+                outline: none;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: $white;
+                    background-color: #33333D;
+                }
+            }
+
+            li.react-tabs__tab.react-tabs__tab--selected {
+                background-color: #33333D;
+                color: $white;
+                border: none;
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+.Form {
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: $darkGrey;
+        border-bottom: thin solid $courseNavigationColor;
+        padding-bottom: 12px;
+    }
+
+    label,
+    p {
+        color: $darkGrey;
+    }
+
+    input:not([type=checkbox]):not([type=radio]) {
+        border-radius: 5px;
+        border: thin solid $courseNavigationColor;
+        background-color: $white;
+        height: 50px;
+        outline: none;
+        font-size: 14px;
+
+        &:focus {
+            border-color: $red;
+            outline: none;
+        }
+
+        &:disabled {
+            background-color: #F8F8F8;
+        }
+    }
+
+    .cancelBtn {
+        background: transparent;
+        color: $darkGrey;
+        border: thin solid $darkGrey;
+        box-sizing: border-box;
+
+        &:hover {
+            background: $black;
+            color: $white;
+            border-color: $black;
+        }
+    }
+}
+
+.notifications {
+    .form-checkbox {
+        label {
+            padding-left: 0;
+
+            i {
+                position: static;
+            }
+        }
+    }
+
+    hr {
+        border-color: $courseNavigationColor;
+    }
+}
+
+.deleteAccount {
+    .confirmationMessage {
+        border: thin solid $courseNavigationColor;
+        padding: 20px 26px;
+        border-radius: 10px;
+        .customRadio {
+            padding-left: 0;
+
+            i {
+                position: static;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,434 @@
+.cart {
+    .title {
+        color: $darkGrey;
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 4.5px;
+        padding-bottom: 27.5px;
+        border-bottom: thin solid #B4B4B4;
+    }
+
+    .cart-item {
+        padding-top: 36px;
+        padding-bottom: 36px;
+        border-bottom: thin solid #B4B4B4;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .item-pic {
+            width: 118px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: $darkGrey;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+
+        .purchaser {
+            color: #9E9E9E;
+            font-size: 13px;
+
+            img {
+                width: 33px;
+                height: auto;
+                border-radius: 6px;
+            }
+        }
+
+        .price {
+            font-size: 14px;
+            color: #9E9E9E;
+
+            .newPrice {
+                color: #F3B23A;
+                margin-right: 23px;
+            }
+        }
+
+        .delete-item {
+            width: 21px;
+        }
+    }
+
+    .summary {
+        background-color: $white;
+        border-radius: 10px;
+        padding: 20px;
+
+        .title {
+            padding-top: 0;
+            padding-bottom: 12px;
+        }
+
+        .totalPrice {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #7A7A7A;
+            font-size: 16px;
+            font-weight: 500;
+            border-bottom: thin solid #B4B4B4;
+        }
+
+        .mb-zero {
+            border-bottom: 0 !important;
+        }
+
+        .formTItle {
+            font-size: 16px;
+            color: #949494;
+            margin-top: 23px;
+            margin-bottom: 10px;
+        }
+
+        .coupanForm {
+            margin-bottom: 70px;
+
+            input.searchInput {
+                border: thin solid #707070;
+                border-right: none;
+                border-radius: 10px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                outline: none !important;
+                height: 45px;
+                padding-left: 20px;
+                min-width: 100px;
+                font-size: 14px;
+
+                &:focus {
+                    border-color: $red;
+                    background: $white;
+                }
+            }
+
+            .submitBtn {
+                background-color: $red;
+                color: $white;
+                text-align: center;
+                border-radius: 0 10px 10px 0 !important;
+                height: 45px;
+                min-width: 43px;
+                padding-left: 12px;
+                padding-right: 12px;
+
+                &:hover {
+                    background-color: $black;
+                }
+            }
+        }
+    }
+
+    .summary.__dashboard__my-cart {
+        background-color: $pink;
+        .coupanForm{
+            margin-bottom: 10px;
+        }
+    }
+
+    .paymentMethod {
+        background-color: $pink;
+        padding: 16px 20px 10px 20px;
+        border-radius: 10px;
+
+        h1.title {
+            padding-bottom: 12px;
+        }
+
+        .paymentTabs {
+            @media (min-width: $lg) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            margin-top: 35px;
+
+            .react-tabs__tab-panel {
+                padding-top: 35px;
+            }
+
+            .paymentForm {
+                h3 {
+                    color: #7A7A7A;
+                    font-size: 20px;
+                    margin-bottom: 13px;
+                }
+
+                .cardField {
+                    background-color: $white;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    color: #707070;
+                    padding-top: 17px;
+                    padding-bottom: 17px;
+                    margin-bottom: 17px;
+
+                    @media (min-width: $md) {
+                        padding-left: 51px;
+                    }
+
+                    @media (max-width: 415px) {
+                        font-size: 14px;
+                    }
+
+                    label {
+                        position: relative;
+                        padding-left: 36px;
+
+                        @media (max-width: 415px) {
+                            padding-left: 30px;
+                        }
+
+                        input {
+                            display: none;
+
+                            &:checked+i {
+                                background-image: url(../images/radio-selected.png);
+                            }
+                        }
+
+                        i {
+                            width: 28px;
+                            height: 28px;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            border-radius: 100px;
+                            background-size: 100% 100%;
+                            background-position: center center;
+                            background-image: url(../images/radio-unselected.png);
+                            box-sizing: border-box;
+
+                            &:before,
+                            &:after {
+                                box-sizing: border-box;
+                            }
+
+                            @media (max-width: $md) {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+
+                    .cardPic {
+                        width: 45px;
+                        text-align: center;
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                .seperator {
+                    margin-top: 40px;
+
+                    @media (min-width: $xl) {
+                        padding-right: 156px;
+                    }
+                }
+
+                .newCardForm {
+                    margin-top: 21px;
+
+                    .FormElements {
+                        background-color: $white;
+                        border-radius: 10px;
+                        padding: 15px;
+
+                        @media (min-width: $lg) {
+                            padding: 17px 24px;
+                        }
+
+                        h3 {
+                            color: #7A7A7A;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+
+                        .form-group {
+                            border: thin solid #B5B5B5;
+                            border-radius: 10px;
+                            padding: 11px 14px;
+                            background-color: $white;
+                            font-size: 14px;
+                            margin-bottom: 18px;
+
+                            input {
+                                border: none !important;
+                                outline: none !important;
+                                color: $black;
+
+                                &:-ms-input-placeholder,
+                                &:-o-input-placeholder,
+                                &:-webkit-input-placeholder,
+                                &:-moz--input-placeholder,
+                                &::placeholder {
+                                    color: #707070;
+                                }
+
+                                @media (max-width: 375px) {
+                                    min-width: 104px;
+                                }
+
+                                @media (min-width: 375px) {
+                                    flex-grow: 1;
+                                }
+                            }
+
+                            .cardType {
+                                width: 35px;
+
+                                img {
+                                    max-width: 33px;
+                                    width: 33px;
+                                }
+                            }
+
+                            .successIcon {
+                                width: 15px;
+
+                                img {
+                                    max-width: 15px;
+                                    width: 15px;
+                                }
+                            }
+                        }
+
+                        .formBtns {
+                            margin-top: 22px;
+
+                            button {
+                                min-width: 128px;
+                            }
+
+                            .cancelBtn {
+                                color: $darkYellow;
+
+                                &:hover {
+                                    background-color: $red;
+                                    border-color: $red;
+                                    color: $white;
+                                }
+                            }
+
+                            .addBtn {
+                                background-color: $darkYellow;
+                                color: $white;
+
+                                &:hover {
+                                    background-color: $red;
+                                    border-color: $red;
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        padding: 14px 25px;
+                        color: $darkYellow;
+                        font-size: 16px;
+                        border-radius: 10px;
+                        border: thin solid $darkYellow;
+                        outline: none;
+                    }
+
+                    .checkoutBtns {
+                        margin-top: 54px;
+                        margin-bottom: 53px;
+
+                        button {
+                            border-color: $red;
+                            min-width: 167px;
+
+                            &:hover {
+                                border-color: $black;
+                                color: $white;
+                                background-color: $black;
+                            }
+                        }
+
+                        .backBtn {
+                            color: $red;
+                            font-weight: 500;
+                        }
+
+                        .proceedBtn {
+                            border-color: $red;
+                            background-color: $red;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.saveforLater {
+    position: relative;
+    padding-left: 28px;
+    font-size: 14px;
+    color: #A1A1A1;
+
+    input {
+        display: none;
+
+        &:checked+i {
+            background-image: url(../images/check.png);
+        }
+    }
+
+    i {
+        width: 21px;
+        height: 21px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 3px;
+        background-size: 11px 8px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: thin solid #BEBEBE;
+        box-sizing: border-box;
+
+        &:before,
+        &:after {
+            box-sizing: border-box;
+        }
+    }
+}
+
+.seperator>div {
+    color: #636363;
+    font-size: 18px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        height: 0.5px;
+        background: $black;
+        position: absolute;
+        width: calc(50% - 15px);
+        top: 14px;
+    }
+
+    &::before {
+        left: 0;
+    }
+
+    &::after {
+        right: 0;
+    }
+}

@@ -1,0 +1,68 @@
+.certificates {
+    .accordion {
+        border: none;
+        border-radius: 0;
+
+        .accordion__item {
+            margin-bottom: 31px;
+            background-color: $lightGreen;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            @media (min-width: $lg){
+                padding: 22px 33px;
+               }
+
+            h2 {
+                color: $darkGrey;
+            }
+        }
+
+        .accordion__panel {
+            padding: 0;
+            margin-top: 15px;
+
+            p {
+                font-size: 14px;
+                color: $darkGrey;
+            }
+        }
+
+        .accordion__button {
+            background: none !important;
+            padding: 15px 0 0 0;
+            color: $red;
+            font-size: 16px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                order: 2;
+                margin-left: 10px;
+                margin-bottom: 4px;
+                transform: rotate(45deg);
+            }
+            .hideDetails{
+                display: none;
+            }
+            .showDetails{
+                display: block;
+            }
+        }
+        .accordion__button[aria-expanded='true']{
+            .hideDetails{
+                display: block;
+            }
+            .showDetails{
+                display: none;
+            }
+        }
+        .accordion__button[aria-expanded='true']::before,
+        .accordion__button[aria-selected='true']::before {
+            transform: rotate(225deg);
+            margin-bottom: -6px;           
+        }
+    }
+}

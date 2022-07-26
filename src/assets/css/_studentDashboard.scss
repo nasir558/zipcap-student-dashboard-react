@@ -1,0 +1,112 @@
+.studentDashboard {
+    .leftNavigationContainer {
+        background-color: $dashboardBlack;
+
+        .navigationItems {
+            padding-bottom: 50px;
+
+            .navTitle {
+                color: $white;
+                font-size: 20px;
+                margin-top: 50px;
+                margin-bottom: 35px;
+            }
+
+            ul {
+                li {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    a {
+                        padding: 12px 12px 12px 41px;
+                        text-align: center;
+                        color: $white;
+                        font-size: 14px;
+                        border-radius: 29px;
+
+                        span.icon {
+                            width: 22px;
+
+                            img {
+                                width: auto;
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    a.active,
+                    a:hover {
+                        background-color: $white;
+                        color: $black;
+
+                        img {
+                            filter: invert(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .welcome {
+        .anouncement {
+            padding: 20px 20px;
+            border-radius: 10px;
+
+            @media (min-width: $xl) {
+                padding: 35px 38px;
+            }
+
+            .closeIcon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .whiteText {
+            color: $white;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .blackText {
+            color: #707070;
+        }
+    }
+
+    .dashBoardMain {       
+
+        .courseCards {
+            color: #707070;
+            border-radius: 10px;          
+
+            .deadLineDate {
+                color: $red;
+            }
+        }
+    }
+}
+.titleDashboard {
+    color: $darkGrey;
+}
+.progressBarBase {
+    background-color: #CCCCCC;
+    border-radius: 10px;
+
+    .progress {
+        border-radius: 10px;
+    }
+}
+.studentDashboardSection {
+    background-image: url(../images/redDots.png), url(../images/greyDots.png);
+    background-position: 0 calc(100% - 152px), right 67px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 68px 110px, 68px 110px;
+}
+@import "./myCourses";
+@import "./wishList";
+@import "./certificates";
+@import "./notifications";
+@import "./account";
